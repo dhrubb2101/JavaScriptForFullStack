@@ -75,3 +75,21 @@ console.log(typeof userEmail) // undefined
 
 console.log(typeof id) // symbol
 console.log(typeof anotherId) // symbol 
+
+
+// ===========================================================
+
+//stack Memory(primitive), heap Memory( Non-Primitive)
+// Stack Memory is used to store primitive data types and reference types.
+// Heap Memory is used to store reference types.
+
+let myYoutubenamem = "dhrubbgupta" // string
+
+let anothername = myYoutubenamem // copy of the value
+
+console.log(anothername) // dhrubbgupta
+
+anothername = "chaiaurcode" // reassigning the value
+
+console.log(anothername) // chaiaurcode
+
