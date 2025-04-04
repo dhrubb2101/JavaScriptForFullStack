@@ -83,13 +83,27 @@ console.log(typeof anotherId) // symbol
 // Stack Memory is used to store primitive data types and reference types.
 // Heap Memory is used to store reference types.
 
-let myYoutubenamem = "dhrubbgupta" // string
+let myYoutubename= "dhrubbguptadotcom" // string
+let anothername = myYoutubename // copy of the value
 
-let anothername = myYoutubenamem // copy of the value
-
-console.log(anothername) // dhrubbgupta
+console.log(anothername) // dhrubbguptadotcom
 
 anothername = "chaiaurcode" // reassigning the value
 
 console.log(anothername) // chaiaurcode
 
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl",
+
+}
+
+let userTwo = userOne // reference of the object
+
+userTwo.email = "hitesh@google.com" // changing the value of the object
+console.log(userOne.email)
+console.log(userTwo.email)
+
+//in stack memory, the value is stored in the variable and it's copy is created in the stack memory which is used original variable remains the same
+//in heap memory, the referemce of the variable is used to access the original variable stored there,that is original variable gets changed if it is changed
