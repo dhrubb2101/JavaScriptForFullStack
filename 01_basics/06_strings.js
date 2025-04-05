@@ -53,4 +53,4 @@ const url = "https://www.hitesh.com/hitesh%20choudhary"
 
 console.log(url.replace('%20','-')) // https://www.hitesh.com/hitesh-choudhary
 console.log(url.includes('sundar'))
-// console.log(spli)
+console.log(split('-'));
