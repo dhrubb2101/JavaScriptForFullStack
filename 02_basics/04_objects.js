@@ -78,3 +78,31 @@ console.log(Object.values(tinderUser))
 console.log(Object.entries(tinderUser))
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')) // true
+
+//object destructuring 
+
+const course = {
+    coursename: "js in hindi",
+    price:"999",
+    courseInstructor:"Hitesh"
+}
+
+// course.courseInstructor
+
+// const {courseInstructor } = course //object destructuring
+//we can also give courseInstructor a different name like Instructor
+const {courseInstructor: instructor } = course 
+console.log(courseInstructor) // Hitesh
+console.log(instructor) // Hitesh
+
+// const instructorDetails = {
+//     "name" : "Hitesh",
+//     "isInstructor" : "js in hindi",
+//     "courses" : ["js", "python", "java"]
+// };
+
+// {
+//     {},
+//     {},
+//     {},
+// }
