@@ -34,8 +34,8 @@ coding.forEach(printMe)
 
 //==================================================
 
-coding.forEach( (item, index, arr)=> {
-    console.log(item,index, arr)
+coding.forEach( (item, val, arr)=> {
+    console.log(item,val, arr)
 })
 
 //===================================================
