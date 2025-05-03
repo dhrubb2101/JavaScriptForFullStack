@@ -21,9 +21,10 @@
       <input type="password" name="" id="">
 
       <ul>
-        <li>one</li>
-        <li>Two</li>
-        <li>Three</li>
+        <li class="list-item">one</li>
+        <li class="list-item">Two</li>
+        <li class="list-item">Three</li>
+        <li class="list-item">Four</li>
       </ul>
     </div>
   </body>
@@ -157,3 +158,39 @@ title.innerHTML
 //turnGreen.style.backgroundColor = "green"
 //turnGreen.style.padding = "10px"
 
+
+//QuerySelectorAll
+//document.querySelectorAll('li')
+//gives you a nodelist of all Li
+//const tempLiList = document.querySelectorAll('li')
+//nodelist and html collection are not pure arrays
+
+//how to access a nodelist
+//tempLiList[0].style.color = 'green'
+
+//const myH1 = document.querySelectorAll('h1')
+//myH1[0].style.color = 'green'
+
+//tempLiList.forEach(function (l) {
+//l.style.backgroundColor = 'green'
+//})
+
+//to use map functionality convert nodelist to array then apply all array things
+//for nodelist use forEach and nothing else as it is not an array
+
+//document.getElementByClassName('list-item')
+//it gives output in the form of html collection 
+// const tempClassList = document.getElementByClassName('list-item')
+// tempClassList.forEach(function(li){
+console.log(li)})
+//this command wouldn't work as it is a HTML collection
+
+//here we will first have to convert html collection to array 
+so here's the command
+//Array.from(tempClassList)
+this converts HTML collection to an array 
+//now we can further proceed
+//const myConvertedArray = Array.from(tempClassList)
+//myConvertedArray.forEach(function(li){
+li.style.color = 'orange'
+})
