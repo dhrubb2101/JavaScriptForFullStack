@@ -14,7 +14,17 @@
   <body class="bg-black">
     <div>
       <h1 id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">Test Text</span></h1>
+      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
       <p>Lorem ipsum dolor sit amet.</p>
+      <input type="password" name="" id="">
+
+      <ul>
+        <li>one</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ul>
     </div>
   </body>
 </html>
@@ -112,4 +122,38 @@ title.innerHTML
 //document.getElementByClassName('heading') // it is used to get the first element with the specified class name
 // it returns an HTML collection, which is a collection of all the elements with the specified class name
 
+
+//QuerySelector
+//querySelector is a method in JavaScript used to select the first element within the DOM that matches a specified CSS selector. It provides a simple way to access and manipulate elements on a webpage.
+//Example : document.querySelector(selector);
+//Parameters:
+//selector: A string representing a CSS selector (e.g., .class, #id, tagname).
+
+//Returns:
+//The first element that matches the selector.
+//null if no element matches.
+
+
 //quwerySelector is used to select the first element that matches the specified CSS selector
+//document.querySelector('h1')
+//output = <h1 id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">Test Text</span></h1>  
+// it returns the first h1 element in the document
+
+//document.querySelector('h2')
+//output is : <h2>Lorem ispum dolor sit.<h2>
+
+
+
+//You can basically right what you're trying to get as output in the form of how you write css selectors
+
+//document.querySelector('#title') // gives id as output
+//document.querySelector('.heading') //gives class as output
+//document.querySelector('input[type="password"]') //gives output of attribute of input element 
+//document.querySelector('p:first-child')
+
+//document.querySelector('ul')
+//myUnorderedList = document.querySelector('ul')
+//const turnGreen = myUnorderedList.querySelector('li')
+//turnGreen.style.backgroundColor = "green"
+//turnGreen.style.padding = "10px"
+
