@@ -13,11 +13,14 @@
   </head>
   <body class="bg-black">
     <div>
-      <h1 id="title" class="heading">DOM learning on Chai aur code</h1>
+      <h1 id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">Test Text</span></h1>
       <p>Lorem ipsum dolor sit amet.</p>
     </div>
   </body>
 </html>
+
+<!-- //performing DOM manipulation in google browser console -->
+<!-- //open the console by pressing F12 or right click and select inspect and then select console tab -->
 
 <!-- console.dir(document)
 // it means document object model
@@ -63,7 +66,7 @@ output - 'title'-->
  output - heading -->
 <!-- document.getElementById('title').setAttribute('class','test')
  output- undefined -->
- //but change does takes place in the document the title class is changed to test
+ <!-- //but change does takes place in the document the title class is changed to test -->
 <!-- document.getElementById('title').getAttribute('class','test heading')
  output - undefined -->
 <!-- //but change does takes place in the document the title class is changed to test heading
@@ -72,3 +75,41 @@ output - 'title'-->
 //const title = document.getElementById('title')
 //output = undefined
 
+//title.style.backgroundColor = 'green' // it is used to change the background color of the element
+//output = 'green'  // it is used to change the background color of the element
+
+//title.style.padding = '10px' // it is used to change the padding of the element
+//output = '15px'  // 
+
+title.style.borderRadius = '5px' // it is used to change the border radius of the element
+//output = '5px'  // 
+
+//how to extract the content of the element
+title.innerHTML // it is used to get the inner HTML of the element
+//output = DOM learning on Chai aur code
+
+//title.textContent // it is used to get the text content of the element
+//output = DOM learning on Chai aur code
+
+//title.innerText // it is used to get the inner text of the element
+//output = DOM learning on Chai aur code
+
+What is the difference between innerHTML, textContent and innerText?
+//innerHTML returns the HTML content of the element, 
+textContent returns the text content of the element,
+ and innerText returns the text content of the element, but it does not include the hidden elements.
+
+//Example with spa element 
+//title.innerText
+output = 'DOM learning on Chai aur code'
+//title.textContent
+output = 'DOM learning on Chai aur code Test Text'
+title.innerHTML
+//output = DOM learning on Chai aur code <span style="display: none;">Test Text</span>
+//innerText and textContent does not include HTML tags, but innerHTML includes HTML tags
+
+
+//document.getElementByClassName('heading') // it is used to get the first element with the specified class name
+// it returns an HTML collection, which is a collection of all the elements with the specified class name
+
+//quwerySelector is used to select the first element that matches the specified CSS selector
