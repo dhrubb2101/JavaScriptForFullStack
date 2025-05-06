@@ -10,4 +10,43 @@
       <li>JavaScript</li>
     </ul>
   </body>
+  <script>
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("python");
+    addLanguage("TypeScript");
+    //     when doing large scale projects this wouldn't be that much optimizable as it
+    // traverses the whole tree structure in the document then adds value to the last which becomes
+    // problematic if there are 1000 or 1 lakh values to traverse through
+    //that is when this method runs once the whole tree has to btraversed just to add another value which is not conducive
+    //so an alternate approach below
+
+    function addOptiLanguage(LangName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
+    }
+    addOptiLanguage("Golang");
+    //here when adding a value you don't have to traverse the whole tree
+    //you take a li element and add a text node and insert a value
+    //thus saving a lot of memory
+
+    //Edit
+    const secondLang = document.querySelector("li:nth-child(2)");
+    // secondLang.innerHTML = "Mojo";
+    const newli = document.createElement("li");
+    newli.textContent = "Mojo";
+    secondLang.replaceWith(newli);
+
+    //edit 2nd example
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = "<li>TypeScript</li>";
+
+    //remove
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
+  </script>
 </html>
